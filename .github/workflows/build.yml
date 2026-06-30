@@ -72,4 +72,4 @@ jobs:
           draft: false
           body: |
             Windows exe build for ${{ github.repository }}.
-          files: pyappify_dist/*.exe
+          files: pyappify_dist/ok-script-app-win32-China-setup.exe
