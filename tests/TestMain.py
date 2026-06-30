@@ -231,14 +231,12 @@ class TestMyOneTimeTask(TaskTestCase):
         self.assertEqual(text[0].name, '招募')
 
     def test_feature1(self):
-        # Create a BattleReport object
-        self.set_image('tests/images/main.png')
+        self.set_image('assets/images/0.png')
         feature = self.task.test_find_one_feature()
         self.assertIsNotNone(feature)
 
     def test_feature2(self):
-        # Create a BattleReport object
-        self.set_image('tests/images/main.png')
+        self.set_image('assets/images/0.png')
         features = self.task.test_find_feature_list()
         self.assertEqual(1, len(features))
 

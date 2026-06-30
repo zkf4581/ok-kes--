@@ -142,7 +142,7 @@ class MyOneTimeTask(MyBaseTask):
         return self.ocr(0.5, 0.5, 1, 1, match=re.compile("招"), log=True) #指定box以提高ocr速度
 
     def test_find_one_feature(self):
-        return self.find_one('this_is_a_place_holder')
+        return self.find_one('event_task')
 
     def test_find_feature_list(self):
-        return self.find_feature('this_is_a_place_holder')
+        return self.find_feature('event_task')
